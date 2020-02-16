@@ -11,13 +11,13 @@
     "prod": "NODE_ENV=production rimraf dist && npm run build:prod",
     "serve": "node dist/server",
     "build:prod": "concurrently \"npm run prod:client\" \"npm run prod:server\"",
-    "prod:client": "parcel build src/client/index.html --experimental-scope-hoisting -d dist/client --public-url /dist/client --no-source-maps",
-    "prod:server": "parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
+    "prod:client": "parcel build src/client/index.html --dist-dir dist/client --public-url /dist/client --no-source-maps",
+    "prod:server": "parcel build src/server/index.ts --dist-dir dist/server --public-url /dist --no-source-maps",
     "compile": "tsc --outDir out-tsc",
     "rollup": "rollup -c rollup.config.js",
     "prod:rollup": "NODE_ENV=production rimraf dist && rimraf out-tsc && mkdir -p out-tsc/client && cp -a src/client/. out-tsc/client && sed 's/index.ts/index.js/g' src/client/index.html > out-tsc/client/index.html && npm run compile && npm run rollup && npm run build:optimal",
     "build:optimal": "concurrently \"npm run optimal:client\" \"npm run prod:server\"",
-    "optimal:client": "parcel build out-tsc/client/index.html --experimental-scope-hoisting -d dist/client --public-url /dist/client --no-source-maps",
+    "optimal:client": "parcel build out-tsc/client/index.html --dist-dir dist/client --public-url /dist/client --no-source-maps",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
     "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write",
     "lint": "eslint src/**/*.ts --fix"
@@ -37,6 +37,10 @@
     "ts-node": "^8.6.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@parcel/transformer-posthtml": "^2.0.0-alpha.3",
+    "@parcel/transformer-raw": "^2.0.0-alpha.3",
+    "@parcel/transformer-react-refresh-babel": "^2.0.0-alpha.3",
     "@types/node": "^13.7.1",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
@@ -44,11 +48,12 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-alpha.3.2",
     "parcel-plugin-css-to-string": "^2.4.3",
     "prettier": "^1.19.1",
     "rollup": "^1.31.1",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "sass": "^1.25.0",
     "typescript": "^3.7.5"
   },
   "browserslist": [
