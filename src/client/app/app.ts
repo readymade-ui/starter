@@ -1,4 +1,5 @@
 import { ButtonComponent, Component, Emitter, Listen, State, html, css } from '@readymade/core';
+import styles from './app.css';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
@@ -6,14 +7,7 @@ class ButtonState {
 
 @Component({
     selector: 'app-button',
-    style: css`
-		:host {
-			background: rgba(24, 24, 24, 1);
-			cursor: pointer;
-			color: white;
-			font-weight: 400;
-		}
-	`,
+    style: styles,
     template: html`
    <span>{{model}}</span>
 	`,
