@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "*": [
+                "client/*",
+                "server/*"
+            ]
+        },
+        "target": "ES2020",
+        "module": "ES2015",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "noImplicitAny": false,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src"
+    ],
+    "allowJS": true
+}

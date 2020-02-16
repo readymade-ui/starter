@@ -1,0 +1,11 @@
+node_modules/
+
+dist/
+.cache
+
+*.log
+
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
