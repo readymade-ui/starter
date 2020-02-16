@@ -1,2 +1,2 @@
-export * from '@ungap/custom-elements-builtin';
-export * from 'broadcastchannel-polyfill';
+export * from "@ungap/custom-elements-builtin";
+export * from "broadcastchannel-polyfill";

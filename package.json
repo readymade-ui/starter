@@ -14,7 +14,9 @@
     "prod:client": "parcel build src/client/index.html -d dist/client --public-url /dist/client --no-source-maps",
     "prod:server": "parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
-    "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write"
+    "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write",
+    "lint": "eslint src/**/*.ts --fix",
+    "patch": "ts-patch install"
   },
   "dependencies": {
     "@readymade/core": "^1.0.0",
@@ -27,14 +29,19 @@
     "express": "^4.17.1",
     "http": "^0.0.0",
     "https": "^1.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2"
   },
   "devDependencies": {
     "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
     "autoprefixer": "^9.7.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
-    "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   },
   "browserslist": [

@@ -1,3 +1,3 @@
-export * from './polyfill';
+export * from "./polyfill";
 
-export { ButtonState, AppButtonComponent } from './app';
+export { ButtonState, AppButtonComponent } from "./app";
