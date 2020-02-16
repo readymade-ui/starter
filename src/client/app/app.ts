@@ -1,4 +1,4 @@
-import { ButtonComponent, Component, Emitter, Listen, State } from '@readymade/core';
+import { ButtonComponent, Component, Emitter, Listen, State, html } from '@readymade/core';
 
 import style from './app.css';
 
@@ -9,7 +9,9 @@ class ButtonState {
 @Component({
     selector: 'app-button',
     style: style,
-    template: require('./app.html'),
+    template: html`
+    <span>{{model}}</span>
+    `,
 })
 class AppButtonComponent extends ButtonComponent {
 
