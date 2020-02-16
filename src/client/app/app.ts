@@ -44,4 +44,4 @@ class AppButtonComponent extends ButtonComponent {
 
 customElements.define('app-button', AppButtonComponent, { extends: 'button' });
 
-export { ButtonState, AppButtonComponent };
+export { ButtonComponent, Component, Emitter, Listen, State, ButtonState, AppButtonComponent };
