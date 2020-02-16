@@ -1,4 +1,7 @@
-import { ButtonComponent, Component, Emitter, Listen, State, html, css } from '@readymade/core';
+import { ButtonComponent, Component, Emitter, Listen, State } from '@readymade/core';
+
+import style from './app.css';
+import template from './app.phtml';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
@@ -6,17 +9,8 @@ class ButtonState {
 
 @Component({
     selector: 'app-button',
-    style: css`
-    :host {
-        background: rgba(24, 24, 24, 1);
-        cursor: pointer;
-        color: white;
-        font-weight: 400;
-      }
-    `,
-    template: html`
-   <span>{{model}}</span>
-	`,
+    style: style,
+    template: template,
 })
 class AppButtonComponent extends ButtonComponent {
 

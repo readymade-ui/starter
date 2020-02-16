@@ -3,6 +3,7 @@ node_modules/
 dist/
 out-tsc/
 .cache
+.parcel-cache
 
 *.log
 

@@ -13,11 +13,6 @@
     "build:prod": "concurrently \"npm run prod:client\" \"npm run prod:server\"",
     "prod:client": "parcel build src/client/index.html --experimental-scope-hoisting -d dist/client --public-url /dist/client --no-source-maps",
     "prod:server": "parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
-    "compile": "tsc --outDir out-tsc",
-    "rollup": "rollup -c rollup.config.js",
-    "prod:rollup": "NODE_ENV=production rimraf dist && rimraf out-tsc && mkdir -p out-tsc/client && cp -a src/client/. out-tsc/client && sed 's/index.ts/index.js/g' src/client/index.html > out-tsc/client/index.html && npm run compile && npm run rollup && npm run build:optimal",
-    "build:optimal": "concurrently \"npm run optimal:client\" \"npm run prod:server\"",
-    "optimal:client": "parcel build out-tsc/client/index.html --experimental-scope-hoisting -d dist/client --public-url /dist/client --no-source-maps",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
     "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write",
     "lint": "eslint src/**/*.ts --fix"
@@ -46,9 +41,9 @@
     "eslint-plugin-prettier": "^3.1.2",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-css-to-string": "^2.4.3",
+    "parcel-plugin-phtml": "^1.0.1",
+    "posthtml-custom-elements": "^1.1.2",
     "prettier": "^1.19.1",
-    "rollup": "^1.31.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "typescript": "^3.7.5"
   },
   "browserslist": [
