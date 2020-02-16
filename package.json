@@ -15,7 +15,7 @@
     "prod:server": "parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
     "compile": "tsc --outDir out-tsc",
     "rollup": "rollup -c rollup.config.js",
-    "optimize": "NODE_ENV=production rimraf dist && rimraf out-tsc && mkdir -p out-tsc/client && cp -a src/client/. out-tsc/client && sed 's/index.ts/index.js/g' src/client/index.html > out-tsc/client/index.html && npm run compile && npm run rollup && npm run build:optimal",
+    "prod:rollup": "NODE_ENV=production rimraf dist && rimraf out-tsc && mkdir -p out-tsc/client && cp -a src/client/. out-tsc/client && sed 's/index.ts/index.js/g' src/client/index.html > out-tsc/client/index.html && npm run compile && npm run rollup && npm run build:optimal",
     "build:optimal": "concurrently \"npm run optimal:client\" \"npm run prod:server\"",
     "optimal:client": "parcel build out-tsc/client/index.html --experimental-scope-hoisting -d dist/client --public-url /dist/client --no-source-maps",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
