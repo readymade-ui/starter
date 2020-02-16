@@ -1,7 +1,6 @@
 import { ButtonComponent, Component, Emitter, Listen, State } from '@readymade/core';
 
 import style from './app.css';
-import template from './app.phtml';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
@@ -10,7 +9,7 @@ class ButtonState {
 @Component({
     selector: 'app-button',
     style: style,
-    template: template,
+    template: require('./app.html'),
 })
 class AppButtonComponent extends ButtonComponent {
 
