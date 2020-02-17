@@ -1,0 +1,5 @@
+@use 'components/button';
+
+:host {
+  @include rd-button();
+}

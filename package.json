@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
-    "dev": "NODE_ENV=development parcel src/client/index.html --port 4444",
+    "dev": "NODE_ENV=development parcel src/client/index.html --hmr-port 1235 --port 4444",
     "prod": "NODE_ENV=production rimraf dist && npm run build:prod",
     "serve": "node dist/server",
     "build:prod": "concurrently \"npm run prod:client\" \"npm run prod:server\"",
@@ -29,6 +29,7 @@
     "express": "^4.17.1",
     "http": "^0.0.0",
     "https": "^1.0.0",
+    "node-sass": "^4.13.1",
     "rimraf": "^3.0.2",
     "ts-node": "^8.6.2"
   },

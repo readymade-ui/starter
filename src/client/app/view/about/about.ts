@@ -1,6 +1,6 @@
 import { CustomElement, Component } from '@readymade/core';
 
-import style from './about.css';
+import style from './about.scss';
 import template from './about.html';
 
 @Component({
