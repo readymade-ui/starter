@@ -891,11 +891,6 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
-"@ungap/custom-elements-builtin@^0.2.10":
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/@ungap/custom-elements-builtin/-/custom-elements-builtin-0.2.10.tgz#5e0f4798b0cb27d6a9d994065bc8e944abbb8dc5"
-  integrity sha512-vMhD1y2+heAfMxoM3hrwm8Hqkotz+Bi8xFUJCPLXkvL+KvJ1rcFlHEdvFPC0dmNtZ1IrOcBzc1KczZRWC1i/Mw==
-
 "@vaadin/router@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@vaadin/router/-/router-1.6.0.tgz#dfdad8c62486e6f20dd85042a35e1e527d33d015"
