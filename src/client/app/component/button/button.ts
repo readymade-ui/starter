@@ -1,18 +1,18 @@
 import { ButtonComponent, Component, Emitter, Listen, State, html } from '@readymade/core';
 
-import style from './app.css';
-import template from './app.html';
+import style from './button.css';
+import template from './button.html';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
 }
 
 @Component({
-    selector: 'app-button',
+    selector: 'rd-button',
     style: style,
     template: template,
 })
-class AppButtonComponent extends ButtonComponent {
+class RdButtonComponent extends ButtonComponent {
 
     constructor() {
         super();
@@ -36,6 +36,6 @@ class AppButtonComponent extends ButtonComponent {
     }
 }
 
-customElements.define('app-button', AppButtonComponent, { extends: 'button' });
+customElements.define('rd-button', RdButtonComponent, { extends: 'button' });
 
-export { ButtonComponent, Component, Emitter, Listen, State, ButtonState, AppButtonComponent };
+export { RdButtonComponent };

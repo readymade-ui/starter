@@ -20,6 +20,7 @@
   "dependencies": {
     "@readymade/core": "^1.0.0",
     "@ungap/custom-elements-builtin": "^0.2.10",
+    "@vaadin/router": "^1.6.0",
     "broadcastchannel-polyfill": "^1.0.0",
     "chalk": "^3.0.0",
     "compression": "^1.7.4",

@@ -1,0 +1,2 @@
+
+export { AboutComponent } from './about';
