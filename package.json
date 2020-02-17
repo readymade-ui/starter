@@ -18,8 +18,8 @@
     "lint": "eslint src/**/*.ts --fix"
   },
   "dependencies": {
+    "@corpuscule/custom-builtin-elements": "^0.3.0",
     "@readymade/core": "^1.0.0",
-    "@ungap/custom-elements-builtin": "^0.2.10",
     "broadcastchannel-polyfill": "^1.0.0",
     "chalk": "^3.0.0",
     "compression": "^1.7.4",
