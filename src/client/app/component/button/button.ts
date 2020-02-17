@@ -5,6 +5,7 @@ import template from './button.html';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
+    public message: string = 'Sent from Readymade';
 }
 
 @Component({
@@ -23,16 +24,24 @@ class RdButtonComponent extends ButtonComponent {
         return new ButtonState();
     }
 
-    @Emitter('bang', { bubbles: true, composed: true })
+    @Emitter('bang', { bubbles: true, composed: true }, 'main')
     @Listen('click')
     public onClick(event: MouseEvent) {
-        this.emitter.broadcast('bang');
+        this.sendMessage(this.getState().message);
     }
     @Listen('keyup')
     public onKeyUp(event: KeyboardEvent) {
         if (event.key === 'Enter') {
-            this.emitter.broadcast('bang');
+            this.sendMessage(this.getState().message);
         }
+    }
+
+    sendMessage(msg: string) {
+        this.emitter.broadcast(new CustomEvent('bang', {
+            detail: {
+                message: msg
+            }
+        }), 'main');
     }
 }
 

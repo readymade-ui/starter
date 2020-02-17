@@ -1,5 +1,5 @@
-@use 'components/button';
+@import "component/button";
 
 [is="rd-button"] {
-  @include rd-button();
+  @include rd-button;
 }

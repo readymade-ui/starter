@@ -1,5 +1,5 @@
-@use 'components/button';
+@import "component/button";
 
 :host {
-  @include rd-button();
+  @include rd-button;
 }
