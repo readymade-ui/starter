@@ -1,6 +1,6 @@
-import { ButtonComponent, Component, Emitter, Listen, State, html } from '@readymade/core';
+import { ButtonComponent, Component, Emitter, Listen, State } from '@readymade/core';
 
-import style from './app.css';
+import style from './app.scss';
 import template from './app.html';
 
 class ButtonState {
