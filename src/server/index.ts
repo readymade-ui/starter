@@ -8,6 +8,7 @@ import https from "https";
 import cors from "cors";
 
 import errorHandler from "./middleware/errorHandler";
+import ssr from "./middleware/ssr";
 
 const app: express.Application = express();
 const env: string = process.env.NODE_ENV || "development";
@@ -41,9 +42,11 @@ app.use(
   express.static(path.resolve(process.cwd(), "dist", "client"))
 );
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.resolve(process.cwd(), "dist", "client", "index.html"));
-});
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.resolve(process.cwd(), "dist", "client", "index.html"));
+// });
+
+app.get("/*", ssr);
 
 server.listen(port, (): void => {
   const addr = `${protocol === "HTTPS" ? "https" : "http"}://localhost:${port}`;

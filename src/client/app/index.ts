@@ -7,4 +7,4 @@ export { HomeComponent } from './view/home';
 export { AboutComponent } from './view/about';
 
 // router
-export { routing } from './router';
+export { rdrouter } from './router';

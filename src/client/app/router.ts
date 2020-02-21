@@ -1,13 +1,11 @@
-import { Router } from '@vaadin/router';
 
-const outlet = document.getElementById('root');
+import { RdRouter } from './router/index';
 
-const routing = new Router(outlet);
-
-routing.setRoutes([
+const routing = [
     { path: '/', component: 'app-home' },
     { path: '/about', component: 'app-about' }
-]);
+];
 
+const rdrouter = new RdRouter('#root', routing);
 
-export { routing }
+export { rdrouter }

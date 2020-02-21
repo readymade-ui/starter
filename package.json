@@ -10,9 +10,10 @@
     "dev": "NODE_ENV=development parcel src/client/index.html --hmr-port 1235 --port 4444",
     "prod": "NODE_ENV=production rimraf dist && npm run build:prod",
     "serve": "node dist/server",
-    "build:prod": "concurrently \"npm run prod:client\" \"npm run prod:server\"",
+    "build:prod": "npm run prod:ssr && concurrently \"npm run prod:client\" \"npm run prod:server\"",
     "prod:client": "parcel build src/client/index.html -d dist/client --public-url /dist/client --no-source-maps",
     "prod:server": "parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
+    "prod:ssr": "rollup -c rollup.config.js",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
     "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write",
     "lint": "eslint src/**/*.ts --fix"
@@ -20,6 +21,7 @@
   "dependencies": {
     "@corpuscule/custom-builtin-elements": "^0.3.0",
     "@readymade/core": "^1.0.0",
+    "@skatejs/ssr": "^0.19.11",
     "@vaadin/router": "^1.6.0",
     "broadcastchannel-polyfill": "^1.0.0",
     "chalk": "^3.0.0",
@@ -31,6 +33,14 @@
     "https": "^1.0.0",
     "node-sass": "^4.13.1",
     "rimraf": "^3.0.2",
+    "rollup": "^1.31.1",
+    "rollup-plugin-html": "^0.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.6",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-scss": "^2.1.0",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.26.0",
     "ts-node": "^8.6.2"
   },
   "devDependencies": {
