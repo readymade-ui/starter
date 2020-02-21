@@ -34,7 +34,7 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^13.7.1",
+    "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
     "autoprefixer": "^9.7.4",
