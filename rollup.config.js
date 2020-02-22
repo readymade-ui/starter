@@ -4,16 +4,17 @@ import postcss from 'rollup-plugin-postcss';
 import { string } from "rollup-plugin-string";
 
 export default [{
-    input: 'src/client/server.ts',
+    input: 'src/client/index.ts',
     treeshake: true,
     output: {
-        file: 'src/server/view/index.js',
-        format: 'esm'
+        file: 'src/client/index.js',
+        format: 'esm',
+        module: 'es2015'
     },
     plugins: [
         postcss({
             extract: false,
-            modules: true,
+            modules: false,
             use: [
                 ['sass', {
                     includePaths: ['src/client/style']
