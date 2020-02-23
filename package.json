@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@corpuscule/custom-builtin-elements": "^0.3.0",
-    "@readymade/core": "^1.0.0",
+    "@readymade/core": "^1.0.1",
     "@skatejs/ssr": "^0.19.11",
     "broadcastchannel-polyfill": "^1.0.0",
     "chalk": "^3.0.0",

@@ -40,19 +40,25 @@ function setState(prop, model) {
     this.$state[prop] = model;
 }
 function compileTemplate(elementMeta, target) {
+    if (!elementMeta.style) {
+        elementMeta.style = '';
+    }
+    if (!elementMeta.template) {
+        elementMeta.template = '';
+    }
     target.prototype.elementMeta = Object.assign(target.elementMeta ? target.elementMeta : {}, elementMeta);
     target.prototype.elementMeta.eventMap = {};
     target.prototype.template = `<style>${elementMeta.style}</style>${elementMeta.template}`;
     target.prototype.bindTemplate = bindTemplate;
     target.prototype.setState = setState;
 }
-function Component(attributes) {
-    if (!attributes) {
+function Component(meta) {
+    if (!meta) {
         console.error('Component must include ElementMeta to compile');
         return;
     }
     return (target) => {
-        compileTemplate(attributes, target);
+        compileTemplate(meta, target);
         return target;
     };
 }
@@ -100,7 +106,6 @@ function styleInject(css, ref) {
 }
 
 var css = "[is=rd-button]{background:#181818;cursor:pointer;color:#fff;font-weight:700;padding:12px 8px;border-radius:4px}";
-var style = {};
 styleInject(css);
 
 var template = "<h1>Home</h1>\n<button is=\"rd-button\"></button>\n";
@@ -113,15 +118,14 @@ let HomeComponent = class HomeComponent extends CustomElement {
 HomeComponent = __decorate([
     Component({
         selector: 'app-home',
-        style: style,
+        style: css,
         template: template,
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
 customElements.define('app-home', HomeComponent);
 
-var css$1 = "";
-var style$1 = {};
+var css$1 = ":host{display:block;padding:8px;border-radius:8px;background:#de8f6e;color:#fff}";
 styleInject(css$1);
 
 var template$1 = "<h1>About</h1>\n<p>This page is about something.</p>\n";
@@ -134,7 +138,7 @@ let AboutComponent = class AboutComponent extends CustomElement {
 AboutComponent = __decorate([
     Component({
         selector: 'app-about',
-        style: style$1,
+        style: css$1,
         template: template$1,
     }),
     __metadata("design:paramtypes", [])
