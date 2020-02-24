@@ -5202,10 +5202,10 @@ parcel-bundler@^1.12.4:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
-parcel-plugin-css-as-string@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-css-as-string/-/parcel-plugin-css-as-string-1.0.0.tgz#414d4f197116f044f347c5da568144feacf0d9f4"
-  integrity sha512-lJBG17i5n0QERu9rzeZBJ+0mwhKLLhVrQ0Om4Y22JiXf4KKL4xbS9mOjqSDiOhu2eCygTRPEPd/JsybMw4JuGQ==
+parcel-plugin-css-as-string@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-css-as-string/-/parcel-plugin-css-as-string-1.0.1.tgz#f5aa5c19455078cc9c0c1a80343030313f47b7aa"
+  integrity sha512-wt6/364VvJPatfWg24Efkh3iLDtO0WCpsj4j+alN0dg4B3Zq+sXCnbhnPjKuDENM9m+zTCa4RdmlZXoxdj1qcQ==
 
 parent-module@^1.0.0:
   version "1.0.1"
