@@ -18,7 +18,7 @@ This repository adds some features too
 - server side rendering with @skatejs/ssr
 - client side routing
 
-* client side router is experimental and may someday become a package.
+NOTE: client side router is experimental and may someday become a package.
 
 ### Installation
 
