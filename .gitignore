@@ -12,3 +12,6 @@ src/client/index.js
 ehthumbs.db
 Icon?
 Thumbs.db
+
+
+src/server/view/index.js

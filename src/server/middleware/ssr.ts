@@ -17,7 +17,7 @@ export default async (req, res) => {
     if (template) {
         render(new template()).then((tmpl) => {
             const index = dom.replace(`<div id="root"></div>`, `<div id="root">${tmpl}</div>`)
-                .replace('__ssr()', '');
+                .replace(/__ssr\(\)/g, '');
             res.send(index);
         })
     } else {
