@@ -108,7 +108,7 @@ function styleInject(css, ref) {
 var css = "[is=rd-button]{background:#181818;cursor:pointer;color:#fff;font-weight:700;padding:12px 8px;border-radius:4px}";
 styleInject(css);
 
-var template = "<h1>Home</h1>\n<button is=\"rd-button\"></button>\n";
+var template = "<rd-nav></rd-nav>\n<h1>Home</h1>\n<button is=\"rd-button\"></button>\n";
 
 let HomeComponent = class HomeComponent extends CustomElement {
     constructor() {
@@ -125,10 +125,10 @@ HomeComponent = __decorate([
 ], HomeComponent);
 customElements.define('app-home', HomeComponent);
 
-var css$1 = ":host{display:block;padding:8px;border-radius:8px;background:#de8f6e;color:#fff}";
+var css$1 = ":host .card{display:block;border-radius:4px;border:1px solid rgba(0,0,0,.2);box-shadow:0 3px 5px 0 rgba(0,0,0,.25);padding:8px;font-family:sans-serif}";
 styleInject(css$1);
 
-var template$1 = "<h1>About</h1>\n<p>This page is about something.</p>\n";
+var template$1 = "<rd-nav></rd-nav>\n<div class=\"card\">\n    <h1>About</h1>\n    <p>This page was server side rendered.</p>\n</div>";
 
 let AboutComponent = class AboutComponent extends CustomElement {
     constructor() {

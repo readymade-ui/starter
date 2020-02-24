@@ -31,7 +31,6 @@
     "express": "^4.17.1",
     "http": "^0.0.0",
     "https": "^1.0.0",
-    "node-sass": "^4.13.1",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
