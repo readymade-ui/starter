@@ -1,6 +1,6 @@
 This is a simple example. Project builds in Parcel 1.x fine, but in Parcel 2.0 typescript decorators cause the build to fail.
 
-This project makes hevy use of TypeScript. The Readymade library is dependent on TypeScript decorator pattern.
+This project makes heavy use of TypeScript. The Readymade library is dependent on TypeScript decorator pattern.
 
 ```
  🚨 Build failed.
