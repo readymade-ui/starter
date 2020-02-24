@@ -110,7 +110,6 @@ styleInject(css);
 
 var template = "<rd-nav></rd-nav>\n<h1>Home</h1>\n<button is=\"rd-button\"></button>\n";
 
-console.log(css);
 let HomeComponent = class HomeComponent extends CustomElement {
     constructor() {
         super();

@@ -13,6 +13,13 @@ Parcel brings the following to developing Web Components with Readymade.
 - css and html pre / postprocessing
 - typescript compilation
 
+This repository adds some features too
+
+- server side rendering with @skatejs/ssr
+- client side routing
+
+* client side router is experimental and may someday become a package.
+
 ### Installation
 
 To get started, fork and clone the repo. Install dependencies with yarn.
@@ -33,6 +40,8 @@ The default project is split into two directories found in the `src` directory: 
 
 ### Production
 
-`yarn prod` builds the project for production. Found in the `dist` directory, the production build optimizes the html, css and javascript.
+`yarn prod` builds the project for production. Found in the `dist` directory, the production build optimizes the html, css and javascript and prepares whitelisted components for server side rendering.
 
 Run `yarn serve` to check the production build locally at `http://localhost:4444`.
+
+More documentation coming soon.
