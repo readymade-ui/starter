@@ -1,0 +1,8 @@
+@mixin rd-button() {
+  background: rgba(24, 24, 24, 1);
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  padding: 12px 8px;
+  border-radius: 4px;
+}
