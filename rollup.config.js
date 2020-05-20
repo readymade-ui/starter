@@ -9,8 +9,7 @@ export default [{
     treeshake: true,
     output: {
         file: 'src/client/index.js',
-        format: 'esm',
-        module: 'es2015'
+        format: 'esm'
     },
     plugins: [
         nodeResolve({
