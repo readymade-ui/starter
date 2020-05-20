@@ -1,7 +1,8 @@
-import nodeResolve from 'rollup-plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
+import nodeResolve from '@rollup/plugin-node-resolve';
+import commonjsResolve from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
-import { string } from "rollup-plugin-string";
+import html from 'rollup-plugin-string-html';
 
 export default [{
     input: 'src/client/index.ts',
@@ -12,6 +13,10 @@ export default [{
         module: 'es2015'
     },
     plugins: [
+        nodeResolve({
+            mainFields: ['module', 'jsnext'],
+            extensions: ['.ts', '.js']
+        }),
         postcss({
             extract: false,
             modules: false,
@@ -22,13 +27,13 @@ export default [{
             ],
             minimize: true
         }),
-        string({
+        html({
             include: ["**/*.html"],
+            exclude: ["**/index.html"],
+            minifier: {}
         }),
-        nodeResolve({
-            mainFields: ['module', 'jsnext']
-        }),
-        typescript()
+        typescript(),
+        commonjsResolve()
     ],
     onwarn: function (message) {
 

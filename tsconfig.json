@@ -20,7 +20,8 @@
         "allowSyntheticDefaultImports": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "strictNullChecks": false
     },
     "include": [
         "src"

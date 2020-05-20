@@ -10,10 +10,19 @@ import cors from "cors";
 import errorHandler from "./middleware/errorHandler";
 import ssr from "./middleware/ssr";
 
+import { config } from './config';
+
 const app: express.Application = express();
 const env: string = process.env.NODE_ENV || "development";
-const port: string = process.env.PORT || "4444";
+const port: string = process.env.PORT || config.port || "4443";
 const protocol: string = process.env.PROTOCOL || "HTTP";
+const corsOptions = env === 'production' ? { origin : `${config.protocol}://${config.host}` } : {};
+const staticOptions = {
+  dotfiles: 'ignore',
+  extensions: ['htm', 'html'],
+  index: false,
+  redirect: false
+}
 let server: http.Server | https.Server;
 
 if (protocol === "HTTPS") {
@@ -30,23 +39,20 @@ if (protocol === "HTTPS") {
   server = http.createServer(app);
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(errorHandler);
 
 if (env === "production") {
   app.use(compression());
+  app.use(express.static(path.resolve(process.cwd(), 'dist', 'client'), staticOptions));
+  // app.use(express.static(path.resolve(process.cwd(), 'dist',  'client', 'asset')));
+  // commented out code enables non ssr server
+  // app.get("/*", (req, res) => {
+  //   res.sendFile(path.resolve(process.cwd(), "dist", "client", "index.html"));
+  // });
+  app.get("/*", ssr);
 }
 
-app.use(
-  "/dist/client",
-  express.static(path.resolve(process.cwd(), "dist", "client"))
-);
-
-// app.get("/*", (req, res) => {
-//   res.sendFile(path.resolve(process.cwd(), "dist", "client", "index.html"));
-// });
-
-app.get("/*", ssr);
 
 server.listen(port, (): void => {
   const addr = `${protocol === "HTTPS" ? "https" : "http"}://localhost:${port}`;
