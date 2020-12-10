@@ -5,7 +5,7 @@ import style from './nav.scss';
 @Component({
   selector: 'rd-nav',
   style: style,
-  template: template,
+  template: template
 })
 class RdNavComponent extends CustomElement {
   constructor() {
