@@ -24,7 +24,7 @@
         "strictNullChecks": false
     },
     "include": [
-        "src"
+        "src/**/*"
     ],
     "allowJS": true
 }
