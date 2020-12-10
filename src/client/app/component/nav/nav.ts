@@ -1,20 +1,16 @@
 import { Component, CustomElement } from '@readymade/core';
-
-import style from './nav.scss';
 import template from './nav.html';
-
+import style from './nav.scss';
 
 @Component({
-    selector: 'rd-nav',
-    style: style,
-    template: template,
+  selector: 'rd-nav',
+  style: style,
+  template: template,
 })
 class RdNavComponent extends CustomElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 }
-
-customElements.define('rd-nav', RdNavComponent);
 
 export { RdNavComponent };

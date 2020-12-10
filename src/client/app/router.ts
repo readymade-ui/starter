@@ -1,11 +1,10 @@
-
-import { RdRouter } from './router/index';
+import { Router } from '@readymade/router';
 
 const routing = [
-    { path: '/', component: 'app-home' },
-    { path: '/about', component: 'app-about' }
+  { path: '/', component: 'app-home' },
+  { path: '/about', component: 'app-about' },
 ];
 
-const rdrouter = new RdRouter('#root', routing);
+const router = new Router('#root', routing);
 
-export { rdrouter }
+export { router };

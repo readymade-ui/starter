@@ -25,8 +25,11 @@
   },
   "dependencies": {
     "@corpuscule/custom-builtin-elements": "^0.3.0",
-    "@readymade/core": "^1.0.1",
+    "@readymade/core": "^2.0.0-beta.2",
+    "@readymade/dom": "^2.0.0-beta.2",
+    "@readymade/router": "^2.0.0-beta.2",
     "@skatejs/ssr": "^0.19.11",
+    "@ungap/custom-elements": "^0.1.10",
     "broadcastchannel-polyfill": "^1.0.0",
     "chalk": "^3.0.0",
     "compression": "^1.7.4",
@@ -60,6 +63,7 @@
     "rollup": "^1.31.1",
     "rollup-plugin-postcss": "^3.1.1",
     "rollup-plugin-string-html": "^1.0.0",
+    "tslib": "^2.0.3",
     "typescript": "^3.7.5"
   },
   "browserslist": [
