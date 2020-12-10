@@ -5,7 +5,7 @@ import style from './home.scss';
 @Component({
   selector: 'app-home',
   style: style,
-  template: template,
+  template: template
 })
 class HomeComponent extends CustomElement {
   constructor() {

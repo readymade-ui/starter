@@ -6,12 +6,12 @@ import { HomeComponent } from './app/view/home';
 function BroadcastChannel(channel) {}
 global['BroadcastChannel'] = BroadcastChannel as any;
 global['observer$'] = {
-  observe: () => {},
+  observe: () => {}
 };
 
 const routes = [
   { path: '/', component: HomeComponent },
-  { path: '/about', component: AboutComponent },
+  { path: '/about', component: AboutComponent }
 ];
 
 export { routes, RdNavComponent };

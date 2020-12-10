@@ -12,7 +12,7 @@ class ButtonState {
   selector: 'rd-button',
   style: style,
   template: template,
-  custom: { extends: 'button' },
+  custom: { extends: 'button' }
 })
 class RdButtonComponent extends ButtonComponent {
   constructor() {
@@ -40,8 +40,8 @@ class RdButtonComponent extends ButtonComponent {
     this.emitter.broadcast(
       new CustomEvent('bang', {
         detail: {
-          message: msg,
-        },
+          message: msg
+        }
       }),
       'main'
     );
