@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"npm run dev\" \"npm run dev:server\"",
-    "dev": "NODE_ENV=development parcel src/client/index.html --port 4444 --open",
+    "dev": "NODE_ENV=development parcel src/client/index.html --port 4444 --open chrome",
     "prod": "NODE_ENV=production npm run clean:dist && npm run build:prod",
     "dev:server": "NODE_ENV=development node watch.js",
     "serve:config": "tsc ./src/server/config.js --outDir ./dist --module CommonJS --allowJS && mkdir -p ./dist/server/src/server && cp ./dist/config.js ./dist/server/src/server/config.js",
