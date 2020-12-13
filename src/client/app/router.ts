@@ -1,9 +1,6 @@
 import { Router } from '@readymade/router';
 
-const routing = [
-  { path: '/', component: 'app-home' },
-  { path: '/about', component: 'app-about' }
-];
+const routing = [{ path: '/', component: 'app-home' }];
 
 const router = new Router('#root', routing);
 

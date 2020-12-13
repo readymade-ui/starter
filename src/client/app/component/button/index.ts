@@ -1,1 +1,0 @@
-export { RdButtonComponent } from './button';
