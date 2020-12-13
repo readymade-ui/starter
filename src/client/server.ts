@@ -1,4 +1,5 @@
-import { RdNavComponent } from './app/component/nav';
+import { RCodeComponent } from './app/component/code';
+import { RNavComponent } from './app/component/nav';
 import { AboutComponent } from './app/view/about';
 import { HomeComponent } from './app/view/home';
 
@@ -14,4 +15,4 @@ const routes = [
   { path: '/about', component: AboutComponent }
 ];
 
-export { routes, RdNavComponent };
+export { routes, RNavComponent, RCodeComponent };
