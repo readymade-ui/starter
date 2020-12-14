@@ -15,6 +15,7 @@ class HomeComponent extends CustomElement {
     this.animateIn();
   }
   public animateIn() {
+    if (!this.shadowRoot.querySelector) return;
     this.shadowRoot.querySelector('.app__icon').animate(
       [
         { opacity: '0', transform: 'translateZ(-1000px)' },
