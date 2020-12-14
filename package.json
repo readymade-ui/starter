@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "@corpuscule/custom-builtin-elements": "^0.3.0",
-    "@readymade/core": "^2.0.0-beta.2",
-    "@readymade/dom": "^2.0.0-beta.2",
-    "@readymade/router": "^2.0.0-beta.2",
+    "@readymade/core": "^2.0.0-beta.3",
+    "@readymade/dom": "^2.0.0-beta.3",
+    "@readymade/router": "^2.0.0-beta.3",
     "@skatejs/ssr": "^0.19.11",
     "@ungap/custom-elements": "^0.1.10",
     "broadcastchannel-polyfill": "^1.0.0",
