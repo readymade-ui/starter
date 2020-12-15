@@ -927,20 +927,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@readymade/core@^2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.0-beta.2.tgz#8294dd7b63a03edbc86105c45dfb597396d0adb6"
-  integrity sha512-0/l5+BqxYBxHKTyubaUD7srJ0Nd0/+WVqT2qQKMPUdJzPovGaZRCWYugzLh/ozWTXaPpIWAKkKbhMkRyGfMr4A==
+"@readymade/core@^2.0.0-beta.3":
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.0-beta.3.tgz#fd9edc79a8b44f6805628452a12f6caec10ac957"
+  integrity sha512-0gN3nB27lKjuCIsM6YcTPpRwHlJqV8sE+F80NBZ2vzKxIqS8fFzwumhes9MJTf7iQgZpr0ExxIy2Hsv5oLKzyA==
 
-"@readymade/dom@^2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.0-beta.2.tgz#ba9d88442c839927ea577dc5b245f35364e4c4a8"
-  integrity sha512-/7abrTTVd1RKQqtOfI8uoYBkvahvOcOaHWcakxqfN+BnjeszsG9lZDnHRzQ0tbKhgYFDh0F9xiwQmaqjomMb1Q==
+"@readymade/dom@^2.0.0-beta.3":
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.0-beta.3.tgz#d85c5599840a425d569338f36c273938715a25d5"
+  integrity sha512-/ppqomT8vAEFYxw/KMphiXM7n4DaVUr++Y58MK7IwTJntOcu136dMT6lL51eCVsJ1J8HDjKhBijAhZkYISmupw==
 
-"@readymade/router@^2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.0-beta.2.tgz#fe79ba2d3622e1349e93df0413b9578ed9e36d95"
-  integrity sha512-qFadIlc8odXhH3oKPJzcVPFctdvq27XDFd5XLixeVkE0Ht9LItMF/O7Lf2JfcmhsZGVZi7RP2hncZiSpS80eBg==
+"@readymade/router@^2.0.0-beta.3":
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.0-beta.3.tgz#46ac80cd2bd8d43c9ca9e71991ec9216758f1915"
+  integrity sha512-5sVcByIl1zt2PeqZq3PyuhBnnnLJsVNCi9DT+qzkl8fil9mPWjLt+O2HzB7Jny3TU3URHayS6dqD/xY2MvcWpA==
 
 "@rollup/plugin-commonjs@^11.1.0":
   version "11.1.0"
