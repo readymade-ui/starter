@@ -19,7 +19,6 @@
     "prod:server": "npm run serve:config && parcel build src/server/index.ts -d dist/server --public-url /dist --target=node --no-source-maps",
     "prod:ssr": "NODE_ENV=production rollup -c rollup.config.ssr.js",
     "prod:index": "NODE_ENV=production rollup -c rollup.config.js",
-    "preinstall": "npx npm-force-resolutions",
     "pretty:check": "prettier \"src/**/*.{js,ts,html,css,scss}\" --check",
     "pretty": "prettier \"src/**/*.{js,ts,html,css,scss}\" --write",
     "lint": "eslint src/**/*.ts --fix"
