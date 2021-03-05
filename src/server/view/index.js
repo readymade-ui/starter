@@ -1,16 +1,16 @@
 /*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) Microsoft Corporation.
 
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
 
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
 function __decorate(decorators, target, key, desc) {
@@ -31,13 +31,25 @@ function attachShadow(instance, options) {
     shadowRoot.appendChild(t.content.cloneNode(true));
     instance.bindTemplate();
 }
+function setValueByString(obj, path, value) {
+    const pList = path.split('.');
+    const len = pList.length;
+    for (let i = 0; i < len - 1; i++) {
+        const elem = pList[i];
+        if (!obj[elem]) {
+            obj[elem] = {};
+        }
+        obj = obj[elem];
+    }
+    obj[pList[len - 1]] = value;
+}
 function bindTemplate() {
     if (this.bindState) {
         this.bindState();
     }
 }
 function setState(prop, model) {
-    this.$state[prop] = model;
+    setValueByString(this.$state, prop, model);
 }
 function compileTemplate(elementMeta, target) {
     if (!elementMeta.style) {
@@ -59,6 +71,20 @@ function Component(meta) {
     }
     return (target) => {
         compileTemplate(meta, target);
+        if (meta.autoDefine === undefined) {
+            meta.autoDefine = true;
+        }
+        if (meta.autoDefine === true) {
+            if (meta.selector && !meta.custom) {
+                customElements.define(meta.selector, target);
+            }
+            else if (meta.selector && meta.custom) {
+                customElements.define(meta.selector, target, meta.custom);
+            }
+            else {
+                customElements.define(meta.selector, target);
+            }
+        }
         return target;
     };
 }
@@ -105,12 +131,11 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "[is=rd-button]{background:#181818;cursor:pointer;color:#fff;font-weight:700;padding:12px 8px;border-radius:4px}";
-styleInject(css);
+var css_248z = "[is=rd-button]{background:#181818;cursor:pointer;color:#fff;font-weight:700;padding:12px 8px;border-radius:4px}";
+styleInject(css_248z);
 
-var template = "<rd-nav></rd-nav>\n<h1>Home</h1>\n<button is=\"rd-button\"></button>\n";
+var template = "<rd-nav>\n  <a href=\"/\">Home</a>\n  <a href=\"/about\">About</a>\n</rd-nav>\n<div class=\"card\">\n    <h1>Home</h1>\n    <p>This page was server side rendered.</p>\n</div>\n";
 
-console.log(css);
 let HomeComponent = class HomeComponent extends CustomElement {
     constructor() {
         super();
@@ -119,17 +144,17 @@ let HomeComponent = class HomeComponent extends CustomElement {
 HomeComponent = __decorate([
     Component({
         selector: 'app-home',
-        style: css,
+        style: css_248z,
         template: template,
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
 customElements.define('app-home', HomeComponent);
 
-var css$1 = ":host .card{display:block;border-radius:4px;border:1px solid rgba(0,0,0,.2);box-shadow:0 3px 5px 0 rgba(0,0,0,.25);padding:8px;font-family:sans-serif}";
-styleInject(css$1);
+var css_248z$1 = ":host .card{display:block;border-radius:4px;border:1px solid rgba(0,0,0,.2);box-shadow:0 3px 5px 0 rgba(0,0,0,.25);padding:8px;font-family:sans-serif}";
+styleInject(css_248z$1);
 
-var template$1 = "<rd-nav></rd-nav>\n<div class=\"card\">\n    <h1>About</h1>\n    <p>This page was server side rendered.</p>\n</div>";
+var template$1 = "<rd-nav>\n    <a href=\"/\">Home</a>\n    <a href=\"/about\">About</a>\n</rd-nav>\n<div class=\"card\">\n    <h1>About</h1>\n    <p>This page was server side rendered.</p>\n</div>\n";
 
 let AboutComponent = class AboutComponent extends CustomElement {
     constructor() {
@@ -139,7 +164,7 @@ let AboutComponent = class AboutComponent extends CustomElement {
 AboutComponent = __decorate([
     Component({
         selector: 'app-about',
-        style: css$1,
+        style: css_248z$1,
         template: template$1,
     }),
     __metadata("design:paramtypes", [])

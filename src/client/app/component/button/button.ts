@@ -1,7 +1,4 @@
-import { ButtonComponent, Component, Emitter, Listen, State } from '@readymade/core';
-
-import style from './button.scss';
-import template from './button.html';
+import { CustomElement, Component, Emitter, Listen, State } from '@readymade/core';
 
 class ButtonState {
     public model: string = 'Hello Readymade!';
@@ -10,10 +7,19 @@ class ButtonState {
 
 @Component({
     selector: 'rd-button',
-    style: style,
-    template: template,
+    style: `
+    :host {
+        background: rgba(24, 24, 24, 1);
+        cursor: pointer;
+        color: white;
+        font-weight: 700;
+        padding: 12px 8px;
+        border-radius: 4px;
+    }
+    `,
+    template: `<span>{{model}}</span>`,
 })
-class RdButtonComponent extends ButtonComponent {
+class RdButtonComponent extends CustomElement {
 
     constructor() {
         super();
@@ -45,6 +51,6 @@ class RdButtonComponent extends ButtonComponent {
     }
 }
 
-customElements.define('rd-button', RdButtonComponent, { extends: 'button' });
+customElements.define('rd-button', RdButtonComponent);
 
 export { RdButtonComponent };
