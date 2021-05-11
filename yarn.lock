@@ -927,20 +927,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@readymade/core@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.0-beta.3.tgz#fd9edc79a8b44f6805628452a12f6caec10ac957"
-  integrity sha512-0gN3nB27lKjuCIsM6YcTPpRwHlJqV8sE+F80NBZ2vzKxIqS8fFzwumhes9MJTf7iQgZpr0ExxIy2Hsv5oLKzyA==
+"@readymade/core@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.1.tgz#1b21f6a86830d5138b48c9375645ae6e2ab55d52"
+  integrity sha512-aI/je1mfLWXOixn1PHBMVKZnqnSMnL8niQLdOZoRDj23QxeEdGGquF83MgwDfHXcPNU4TeIhbhpzpoBmMl5crg==
 
-"@readymade/dom@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.0-beta.3.tgz#d85c5599840a425d569338f36c273938715a25d5"
-  integrity sha512-/ppqomT8vAEFYxw/KMphiXM7n4DaVUr++Y58MK7IwTJntOcu136dMT6lL51eCVsJ1J8HDjKhBijAhZkYISmupw==
+"@readymade/dom@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.1.tgz#3a84fe968272ea2de6204151a443a722e61d8a44"
+  integrity sha512-pzFH10RYztX1cneI/qCONa3uUEgTUgB+WQ3RHbwn8OXx0eJD1AWxQNOpm9PaYuXoF7HF1ejrmgsh3DCJxBh9tw==
 
-"@readymade/router@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.0-beta.3.tgz#46ac80cd2bd8d43c9ca9e71991ec9216758f1915"
-  integrity sha512-5sVcByIl1zt2PeqZq3PyuhBnnnLJsVNCi9DT+qzkl8fil9mPWjLt+O2HzB7Jny3TU3URHayS6dqD/xY2MvcWpA==
+"@readymade/router@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.1.tgz#c1b5c162da290012f11111ff85071e4b80c4a680"
+  integrity sha512-G0lZm1rROSIVZQ01YulASLHQOms5rr5sXGwxkRERyFmLLnS+Ah5BdOA5mMH72K2Ns2mrBy+Wzhw0VA0/YGNtFQ==
 
 "@rollup/plugin-commonjs@^11.1.0":
   version "11.1.0"
@@ -4731,9 +4731,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.4, lodash@~4.17.10:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.2.0:
   version "2.2.0"
