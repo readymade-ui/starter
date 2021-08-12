@@ -927,20 +927,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@readymade/core@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.0-beta.3.tgz#fd9edc79a8b44f6805628452a12f6caec10ac957"
-  integrity sha512-0gN3nB27lKjuCIsM6YcTPpRwHlJqV8sE+F80NBZ2vzKxIqS8fFzwumhes9MJTf7iQgZpr0ExxIy2Hsv5oLKzyA==
+"@readymade/core@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.1.tgz#1b21f6a86830d5138b48c9375645ae6e2ab55d52"
+  integrity sha512-aI/je1mfLWXOixn1PHBMVKZnqnSMnL8niQLdOZoRDj23QxeEdGGquF83MgwDfHXcPNU4TeIhbhpzpoBmMl5crg==
 
-"@readymade/dom@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.0-beta.3.tgz#d85c5599840a425d569338f36c273938715a25d5"
-  integrity sha512-/ppqomT8vAEFYxw/KMphiXM7n4DaVUr++Y58MK7IwTJntOcu136dMT6lL51eCVsJ1J8HDjKhBijAhZkYISmupw==
+"@readymade/dom@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.1.tgz#3a84fe968272ea2de6204151a443a722e61d8a44"
+  integrity sha512-pzFH10RYztX1cneI/qCONa3uUEgTUgB+WQ3RHbwn8OXx0eJD1AWxQNOpm9PaYuXoF7HF1ejrmgsh3DCJxBh9tw==
 
-"@readymade/router@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.0-beta.3.tgz#46ac80cd2bd8d43c9ca9e71991ec9216758f1915"
-  integrity sha512-5sVcByIl1zt2PeqZq3PyuhBnnnLJsVNCi9DT+qzkl8fil9mPWjLt+O2HzB7Jny3TU3URHayS6dqD/xY2MvcWpA==
+"@readymade/router@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.1.tgz#c1b5c162da290012f11111ff85071e4b80c4a680"
+  integrity sha512-G0lZm1rROSIVZQ01YulASLHQOms5rr5sXGwxkRERyFmLLnS+Ah5BdOA5mMH72K2Ns2mrBy+Wzhw0VA0/YGNtFQ==
 
 "@rollup/plugin-commonjs@^11.1.0":
   version "11.1.0"
@@ -5727,9 +5727,9 @@ path-key@^3.1.0:
   integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
