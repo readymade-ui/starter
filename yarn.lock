@@ -927,20 +927,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@readymade/core@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.0.0-beta.3.tgz#fd9edc79a8b44f6805628452a12f6caec10ac957"
-  integrity sha512-0gN3nB27lKjuCIsM6YcTPpRwHlJqV8sE+F80NBZ2vzKxIqS8fFzwumhes9MJTf7iQgZpr0ExxIy2Hsv5oLKzyA==
+"@readymade/core@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@readymade/core/-/core-2.1.1.tgz#df995d0b46cfcd85a72e8ce43c11e6359628303c"
+  integrity sha512-kGh+szeNFZWHfaN25yaNYLBu0PLHqUef1nV7EEiq3KcV9nSzpi9u7dCGs8Gqt3yRCxOLksEbSGXEoNRg+l5czA==
 
-"@readymade/dom@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.0.0-beta.3.tgz#d85c5599840a425d569338f36c273938715a25d5"
-  integrity sha512-/ppqomT8vAEFYxw/KMphiXM7n4DaVUr++Y58MK7IwTJntOcu136dMT6lL51eCVsJ1J8HDjKhBijAhZkYISmupw==
+"@readymade/dom@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@readymade/dom/-/dom-2.1.1.tgz#4302ffe17df3980a113296df12b1c981323e123c"
+  integrity sha512-+3WnnnjHtHVSbdYb0Q8c6+i0ubuS6X/8mpeToyiueKSpABj3bBhmGhmcxRFVSGJZ4WSaL/siHzDAGshpWjb7YQ==
 
-"@readymade/router@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.0.0-beta.3.tgz#46ac80cd2bd8d43c9ca9e71991ec9216758f1915"
-  integrity sha512-5sVcByIl1zt2PeqZq3PyuhBnnnLJsVNCi9DT+qzkl8fil9mPWjLt+O2HzB7Jny3TU3URHayS6dqD/xY2MvcWpA==
+"@readymade/router@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@readymade/router/-/router-2.1.1.tgz#89d97357b4706457c178e77792b3ca369417d2b6"
+  integrity sha512-ErwJsmdqf9HcC3RwQ/9ca5uMMW6ZmRupvChuwdtihRJ6U5lyhzgzhV5vLdmq0NWY3hQhgbQ7669mMUlVCTQLdg==
 
 "@rollup/plugin-commonjs@^11.1.0":
   version "11.1.0"
@@ -6345,9 +6345,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 querystring-es3@^0.2.0:
   version "0.2.1"
