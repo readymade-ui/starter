@@ -1,11 +1,11 @@
 import { Component, CustomElement } from '@readymade/core';
-import template from './home.html';
-import style from './home.scss';
+import html from './home.html?raw';
+import style from './home.scss?raw';
 
 @Component({
   selector: 'app-home',
   style: style,
-  template: template
+  template: html,
 })
 class HomeComponent extends CustomElement {
   constructor() {
@@ -19,15 +19,26 @@ class HomeComponent extends CustomElement {
     this.shadowRoot.querySelector('.app__icon').animate(
       [
         { opacity: '0', transform: 'translateZ(-1000px)' },
-        { opacity: '1', transform: 'translateZ(0px)' }
+        { opacity: '1', transform: 'translateZ(0px)' },
       ],
       {
         duration: 2000,
         easing: 'cubic-bezier(0.19, 1, 0.22, 1)',
-        fill: 'forwards'
-      }
+        fill: 'forwards',
+      },
     );
   }
 }
 
-export { HomeComponent };
+const template = () => `
+<app-home>
+  <template shadowroot="open">
+  <style>
+  ${style}
+  </style>
+  ${html}
+  </template>
+</app-home>
+`;
+
+export { HomeComponent, template };

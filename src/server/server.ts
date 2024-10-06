@@ -52,7 +52,7 @@ async function createServer(root = process.cwd(), hmrPort = 24678) {
     app.use(
       (await import('serve-static')).default(resolve('../client'), {
         index: false,
-      })
+      }),
     );
     app.use('*', ssr);
   }
@@ -63,13 +63,11 @@ async function createServer(root = process.cwd(), hmrPort = 24678) {
 createServer(process.cwd(), 24678).then(({ app }) => {
   const port: string = process.env.PORT || config.port || '4443';
   app.listen(port, (): void => {
-    const addr = `${
-      config.protocol === 'HTTPS' ? 'https' : 'http'
-    }://localhost:${port}`;
+    const addr = `${config.protocol === 'HTTPS' ? 'https' : 'http'}://localhost:${port}`;
     process.stdout.write(
       `\n [${new Date().toISOString()}] ${chalk.green(
-        'Server running:'
-      )} ${chalk.blue(addr)} \n`
+        'Server running:',
+      )} ${chalk.blue(addr)} \n`,
     );
   });
 });
