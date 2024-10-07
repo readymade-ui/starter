@@ -1,6 +1,6 @@
 import { Component, CustomElement } from '@readymade/core';
 import html from './home.html?raw';
-import style from './home.scss?raw';
+import style from './home.css?raw';
 
 @Component({
   selector: 'app-home',
