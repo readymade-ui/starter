@@ -8,7 +8,7 @@ import { Readable } from 'stream';
 import { minify } from 'html-minifier-terser';
 import { ViteDevServer } from 'vite';
 
-import { config, ReadymadeEnvironmentConfig } from '../config.js';
+import { config } from '../config.js';
 
 import * as cheerio from 'cheerio';
 
