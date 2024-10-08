@@ -1,21 +1,6 @@
-import { standardCssModules } from 'vite-plugin-standard-css-modules';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
-import pkgMinifyHTML from 'rollup-plugin-minify-html-literals';
 import { glob } from 'glob';
 
-const minifyHTML = pkgMinifyHTML.default;
-
 export default {
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'public/images',
-          dest: 'images',
-        },
-      ],
-    }),
-  ],
   css: {
     preprocessorOptions: {
       scss: {
@@ -39,13 +24,7 @@ export default {
         sourcemap: false,
         extend: true,
       },
-      plugins: [
-        minifyHTML(),
-        standardCssModules({
-          include: ['/**/*.css'],
-          minify: true,
-        }),
-      ],
+      plugins: [],
     },
   },
 };

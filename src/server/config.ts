@@ -1,12 +1,15 @@
 const env = process.env.NODE_ENV || 'development';
 
-let config: {
+interface ReadymadeEnvironmentConfig {
   env: string;
   host: string;
   protocol: string;
   port: string;
   hmrPort?: string;
-};
+  ignoreHTMLMinify?: Set<string>;
+}
+
+let config: ReadymadeEnvironmentConfig;
 
 if (env === 'development') {
   config = {
@@ -27,4 +30,4 @@ if (env === 'production') {
   };
 }
 
-export { config };
+export { config, ReadymadeEnvironmentConfig };
