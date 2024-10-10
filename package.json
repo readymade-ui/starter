@@ -42,9 +42,9 @@
   },
   "dependencies": {
     "@lit-labs/ssr": "^3.2.2",
-    "@readymade/core": "3.0.0-beta.1",
-    "@readymade/dom": "3.0.0-beta.1",
-    "@readymade/router": "3.0.0-beta.1",
+    "@readymade/core": "3.0.0-beta.3",
+    "@readymade/dom": "3.0.0-beta.3",
+    "@readymade/router": "3.0.0-beta.3",
     "@ungap/custom-elements": "^1.3.0",
     "autoprefixer": "^10.4.20",
     "broadcastchannel-polyfill": "^1.0.1",

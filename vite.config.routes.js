@@ -1,17 +1,10 @@
 import { glob } from 'glob';
 
 export default {
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-      },
-    },
-  },
   esbuild: {
+    format: 'esm',
     target: 'es2022',
   },
-  assetsInclude: ['**/*.html'],
   build: {
     ssr: true,
     minify: true,

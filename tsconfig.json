@@ -11,6 +11,5 @@
     "moduleResolution": "node",
     "isolatedModules": false,
     "allowSyntheticDefaultImports": true
-  },
-  "include": ["src"]
+  }
 }

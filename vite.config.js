@@ -11,14 +11,6 @@ export default {
       ],
     }),
   ],
-  css: {
-    devSourcemap: true,
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-      },
-    },
-  },
   esbuild: {
     format: 'esm',
     target: 'es2022',

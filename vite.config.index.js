@@ -1,14 +1,8 @@
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default {
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-      },
-    },
-  },
   esbuild: {
+    format: 'esm',
     target: 'es2022',
   },
   plugins: [

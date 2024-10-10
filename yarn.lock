@@ -805,24 +805,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@readymade/core@npm:3.0.0-beta.1":
-  version: 3.0.0-beta.1
-  resolution: "@readymade/core@npm:3.0.0-beta.1"
-  checksum: 10c0/b01937419208a89d143ae1cacd18b2c941233a1dba8195c2e7a353fa8b7700bcaad4d83062abbb06505cf5fc805be7c9fd4732619f0b395bd1c381df88348ec9
+"@readymade/core@npm:3.0.0-beta.3":
+  version: 3.0.0-beta.3
+  resolution: "@readymade/core@npm:3.0.0-beta.3"
+  checksum: 10c0/f6070526148f01fe0670a6033546ff6c3354a0d7ff3c1d4802828d90b5c2cc858f7109edb57b5c4c93708426049d746451b86c618ae3e4811c14d1e309ce9f84
   languageName: node
   linkType: hard
 
-"@readymade/dom@npm:3.0.0-beta.1":
-  version: 3.0.0-beta.1
-  resolution: "@readymade/dom@npm:3.0.0-beta.1"
-  checksum: 10c0/fe7d8951ee785a79205133143d69e7425b0b318714070a66e1827b4228f5be76d97b8e2957205dda74af30b662611b8cadcef42cf13111b95549076e51b75b17
+"@readymade/dom@npm:3.0.0-beta.3":
+  version: 3.0.0-beta.3
+  resolution: "@readymade/dom@npm:3.0.0-beta.3"
+  checksum: 10c0/08bd480aee2150309285415316ba1adb9ca0f707ab4a26ca2c4212d2bba4bc2d801130ed8ccb361da6a9406339d5003644f7da1f49678d4735f4e94e01274c5a
   languageName: node
   linkType: hard
 
-"@readymade/router@npm:3.0.0-beta.1":
-  version: 3.0.0-beta.1
-  resolution: "@readymade/router@npm:3.0.0-beta.1"
-  checksum: 10c0/d496f427af3a8d259eb6c91b11f2f0dd36d9f0ab4af8fcfb600bc3e8a95a34ea06f478910703f28eeab71226356645c546ff5fe726ff025080cb9715f1163a91
+"@readymade/router@npm:3.0.0-beta.3":
+  version: 3.0.0-beta.3
+  resolution: "@readymade/router@npm:3.0.0-beta.3"
+  checksum: 10c0/c4a15624d4bf7c273271b3d93c38c0f2f5e0475858710516fd1c9f44671d237ee4d3457d430b0d23389f3d585fc425d6cfe50fe80a1297dc9f1dcf2baf5814e7
   languageName: node
   linkType: hard
 
@@ -8383,9 +8383,9 @@ __metadata:
     "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
     "@eslint/js": "npm:^9.12.0"
     "@lit-labs/ssr": "npm:^3.2.2"
-    "@readymade/core": "npm:3.0.0-beta.1"
-    "@readymade/dom": "npm:3.0.0-beta.1"
-    "@readymade/router": "npm:3.0.0-beta.1"
+    "@readymade/core": "npm:3.0.0-beta.3"
+    "@readymade/dom": "npm:3.0.0-beta.3"
+    "@readymade/router": "npm:3.0.0-beta.3"
     "@rollup/plugin-commonjs": "npm:^28.0.0"
     "@rollup/plugin-json": "npm:^6.1.0"
     "@rollup/plugin-node-resolve": "npm:^15.3.0"
