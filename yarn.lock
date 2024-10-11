@@ -1163,6 +1163,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cors@npm:^2.8.17":
+  version: 2.8.17
+  resolution: "@types/cors@npm:2.8.17"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 10c0/457364c28c89f3d9ed34800e1de5c6eaaf344d1bb39af122f013322a50bc606eb2aa6f63de4e41a7a08ba7ef454473926c94a830636723da45bf786df032696d
+  languageName: node
+  linkType: hard
+
 "@types/estree@npm:*":
   version: 0.0.45
   resolution: "@types/estree@npm:0.0.45"
@@ -1207,6 +1216,13 @@ __metadata:
     "@types/qs": "npm:*"
     "@types/serve-static": "npm:*"
   checksum: 10c0/0d74b53aefa69c3b3817ee9b5145fd50d7dbac52a8986afc2d7500085c446656d0b6dc13158c04e2d9f18f4324d4d93b0452337c5ff73dd086dca3e4ff11f47b
+  languageName: node
+  linkType: hard
+
+"@types/he@npm:^1":
+  version: 1.2.3
+  resolution: "@types/he@npm:1.2.3"
+  checksum: 10c0/562e4ec00e31e3d464e79e6da4b8a5c21999d38ceca6a8facaa96e89c2d646f410bb58bb81f48a7472aeb4655ce40d27b7d77e5a4fa5a2d9caa0f3037caab5b7
   languageName: node
   linkType: hard
 
@@ -5911,6 +5927,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lit@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "lit@npm:3.2.1"
+  dependencies:
+    "@lit/reactive-element": "npm:^2.0.4"
+    lit-element: "npm:^4.1.0"
+    lit-html: "npm:^3.2.0"
+  checksum: 10c0/064a31459fe54ad052c0685d058dd5aef089ddc97a247888ef91a0356dfef60c8cc531e48077bbd2cb4e9f48cb86f0ff0951bb535f1d9f144d2351f253291f66
+  languageName: node
+  linkType: hard
+
 "loader-utils@npm:^3.2.0":
   version: 3.3.1
   resolution: "loader-utils@npm:3.3.1"
@@ -8393,7 +8420,9 @@ __metadata:
     "@rollup/plugin-terser": "npm:^0.4.4"
     "@rollup/plugin-typescript": "npm:^12.1.0"
     "@rollup/plugin-url": "npm:^8.0.2"
+    "@types/cors": "npm:^2.8.17"
     "@types/express": "npm:^5.0.0"
+    "@types/he": "npm:^1"
     "@types/node": "npm:^22.7.4"
     "@types/serve-static": "npm:^1"
     "@typescript-eslint/eslint-plugin": "npm:^8.8.0"
@@ -8418,6 +8447,7 @@ __metadata:
     express: "npm:^4.17.1"
     glob: "npm:^11.0.0"
     globals: "npm:^15.10.0"
+    he: "npm:^1.2.0"
     helmet: "npm:^8.0.0"
     html-minifier-terser: "npm:^7.2.0"
     htmlnano: "npm:^2.1.1"
@@ -8426,6 +8456,7 @@ __metadata:
     https: "npm:^1.0.0"
     husky: "npm:^9.1.6"
     lint-staged: "npm:^15.2.10"
+    lit: "npm:^3.2.1"
     lit-html: "npm:^3.2.0"
     node-fetch: "npm:2.6.7"
     node-window-polyfill: "npm:^1.0.2"

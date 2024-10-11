@@ -17,11 +17,8 @@ const env: string = process.env.NODE_ENV || 'development';
 const port: string = process.env.PORT || config.port || '4443';
 const hmrPort: string = process.env.HMR_PORT || config.hmrPort || '7443';
 
-// import { fileURLToPath } from 'url';
-// const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 async function createServer(root = process.cwd()) {
-  const resolve = (p) => path.resolve(root, p);
+  const resolve = (p: string) => path.resolve(root, p);
   const app: express.Application = express();
 
   const corsOptions =
