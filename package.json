@@ -1,6 +1,6 @@
 {
   "name": "readymade-starter",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "description": "Starter code for a site built with Readymade",
   "repository": "git@github.com:readymade-ui/starter.git",
   "author": "Steve Belovarich <steveblue@gmail.com>",
@@ -104,7 +104,6 @@
     "rollup-plugin-polyfill-node": "^0.13.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-string-html": "^1.0.0",
-    "sass": "^1.79.4",
     "stream-browserify": "3",
     "tachometer": "^0.7.1",
     "tslib": "~2.7.0",
